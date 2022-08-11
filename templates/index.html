@@ -1,0 +1,6 @@
+<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}" type="text/css" media="all"/>
+<h1>
+{% for key,value in mydata.items() %}
+	<p><b>key:</b> {{key}} <br><b>value:</b> {{value}}</p><hr>
+{% endfor %}
+</h1>
